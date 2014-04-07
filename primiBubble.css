@@ -1,0 +1,60 @@
+.help_hint {
+    position: absolute;
+    background: #1b1b1b;
+    width: 378px;
+	max-width: 378px;
+	min-width: 100px;
+    height: 71px;
+    color: #f6f6f6;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #1b1b1b;
+	cursor: pointer;
+	z-index: 100;
+	display: none;
+}
+
+.help_arrow {
+	position: absolute;
+	height: 32px;
+	width: 32px;
+	z-index: -1;
+}
+
+.help_arrow.top {
+	background: url('img/arrow_up_full.png');
+	top: -16px;
+}
+
+.help_arrow.bottom {
+	background: url('img/arrow_down_full.png');
+	bottom: -16px;
+}
+
+.help_arrow.left {
+	left: 11px;
+}
+
+.help_arrow.right {
+	right: 11px;
+}
+
+.help_arrow.side {
+	top: 5px;
+}
+
+.help_arrow.side.left {
+	background: url('img/arrow_left_full.png');
+	left: -17px;
+}
+
+.help_arrow.side.right {
+	background: url('img/arrow_right_full.png');
+	right: -15px;
+}
+
+.help_close {
+    float: right;
+    width: 20px;
+	height: 20px;
+    margin: 4px 4px 0 0;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="primiBubble.css">
+<script src="primiBubble.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+
+<p id="top1" style="width:250px;padding:0;margin:auto;background:red;">Show bubble on top of the object 1.</p>
+</br>
+<p id="top2" style="width:250px;padding:0;margin:auto;background:red;">Show bubble on top of the object 2.</p>
+</br>
+<p id="bottom1" style="width:250px;padding:0;margin:auto;background:red;">Show bubble beneath the object 1.</p>
+</br>
+<p id="bottom2" style="width:250px;padding:0;margin:auto;background:red;">Show bubble beneath the object 2.</p>
+</br>
+<p id="left" style="width:250px;padding:0;margin:auto;background:red;">Show bubble on the left of the object.</p>
+</br>
+<p id="right" style="width:250px;padding:0;margin:auto;background:red;">Show bubble on the right of the object.</p>
+
+<script>
+	$(window).load(function() {
+		
+		var options = {
+			top1 : {
+				bounce: true,
+				message : 'Show bubble on top of the object 1.',
+				position : 'auto', 
+				arrow : 'bottom left', 
+				clickToClose : false,
+				time : ''
+			},
+			top2 : {
+				bounce: true,
+				message : 'Show bubble on top of the object 2.',
+				position : 'auto', 
+				arrow : 'bottom right', 
+				clickToClose : false,
+				time : ''
+			},
+			bottom1 : {
+				bounce: true,
+				message : 'Show bubble beneath the object 1.',
+				position : 'auto', 
+				arrow : 'top left', 
+				clickToClose : false,
+				time : ''
+			},
+			bottom2 : {
+				bounce: true,
+				message : 'Show bubble beneath the object 2.',
+				position : 'auto', 
+				arrow : 'top right', 
+				clickToClose : false,
+				time : ''
+			},
+			left : {
+				bounce: true,
+				message : 'Show bubble on the left of the object.',
+				position : 'auto', 
+				arrow : 'side right', 
+				clickToClose : false,
+				time : ''
+			},
+			right : {
+				bounce: true,
+				message : 'Show bubble on the right of the object.',
+				position : 'auto', 
+				arrow : 'side left', 
+				clickToClose : false,
+				time : ''
+			},
+		};
+		
+		$('p').click(function(){
+			var id = $(this).attr('id');
+
+			$('#'+id+'').primiBubble(options[id]);
+		});
+			
+	});
+</script>
+</body>
+</html>
