@@ -6,7 +6,7 @@ To use primiBubble just execute:
 ```
 #!javascript
 
-$([id]).primiBubble([options]);
+     $([id]).primiBubble([options]);
 ```
 
 
@@ -25,12 +25,15 @@ The supported options are:
 
 The default options are:
 
+```
+#!javascript
       bounce: false,  
       message : 'This is a helpful primiBubble',
       position : 'auto', 
       arrow : 'side left', 
       clickToClose : false, 
       time : 10000 
+```
 
 ## *Bubble position ##
 
@@ -40,4 +43,4 @@ If `position:'auto'` then the position of the bubble is calculated as such:
      * if `arrow` contains 'side' then the bubble should be beside the parent element (left or right, depends on what option `arrow` is set to)
      * if `arrow` contains 'top' then the bubble should be below the parent element  
      * if `arrow` contains 'bottom' then the bubble should be over the parent element
-* calculate the absolute position based on the left/top offset and the width/height of the parent element and the width/height of the bubble element 
+* calculate the absolute position based on the left/top offset and the width/height of the parent element and the width/height of the bubble element
