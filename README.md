@@ -1,0 +1,1 @@
+A small jQuery plugin to display messages in the form of text bubbles. It’s not fully developed yet and is something I’m working on in my spare time. 
